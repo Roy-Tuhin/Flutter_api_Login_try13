@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
         print(response.body);
         jsonResponse = json.decode(response.body.toString());
         print(jsonResponse);
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>Second(response: ApiResponse.fromJson(response.data)));
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Second(response: ApiResponse.fromJson(jsonResponse))));
       } else {
         print("Wronggooooooooooooooooooooooooooo");
         print(response.body);
